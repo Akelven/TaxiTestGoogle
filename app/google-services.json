@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "771929812429",
+    "project_id": "taxitest-3851a",
+    "storage_bucket": "taxitest-3851a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771929812429:android:7b9bd501c6965ec1f2e884",
+        "android_client_info": {
+          "package_name": "com.example.taxitest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771929812429-rlnaois2vvu3j0hgvagg1ersbsdl5le2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.taxitest",
+            "certificate_hash": "92f0c832be9de10cf05993c8f8de80fad3db9c42"
+          }
+        },
+        {
+          "client_id": "771929812429-omjm0ue0bhg12c47quuds7ukodm01hlk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgKIsD_lEviQf4bWDdghK6iWT-OZtTtiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771929812429-omjm0ue0bhg12c47quuds7ukodm01hlk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
