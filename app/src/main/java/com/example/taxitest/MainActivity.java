@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -52,10 +55,12 @@ public class MainActivity extends AppCompatActivity {
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //if firebase Data != null 일시 AfterActivity 로 넘어감
                 signIn();
             }
         });
     }
+
     // [START signin]
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -101,9 +106,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) { //update ui code here
         if (user != null) {
-            Intent intent = new Intent(this, AfterActivity.class);
-            startActivity(intent);
-            finish();
+                Intent intent = new Intent(this, ThirdActivity.class);
+                startActivity(intent);
+                finish();
+            }
         }
     }
-}
