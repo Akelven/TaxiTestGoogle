@@ -8,6 +8,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Objects;
+
 public class AfterActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnRevoke, btnLogout;
     private FirebaseAuth mAuth;
